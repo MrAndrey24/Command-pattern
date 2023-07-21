@@ -9,29 +9,5 @@ public class Main {
 
         GestorComando gc = new GestorComando();
         gc.IniciarProceso();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-    }
+}

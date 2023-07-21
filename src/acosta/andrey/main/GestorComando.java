@@ -40,7 +40,7 @@ public class GestorComando {
            out.println("Debes ser mayor de 18 ");
        }
        out.println("Ingrese su salario bruto");
-       Double salario = Double.parseDouble(in.readLine());
+       double salario = Double.parseDouble(in.readLine());
        out.println("Usted esta casado ?");
        out.println("SI,NO");
        String casado = in.readLine().toUpperCase();

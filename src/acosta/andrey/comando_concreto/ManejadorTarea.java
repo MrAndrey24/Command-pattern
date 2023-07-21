@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManejadorTarea implements TareaEjecutar {
-    private List<TareaEjecutar> lista = new ArrayList<TareaEjecutar>();
+    private final List<TareaEjecutar> lista = new ArrayList<TareaEjecutar>();
 
     public void agregar(TareaEjecutar tarea){
         lista.add(tarea);
