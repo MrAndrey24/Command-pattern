@@ -30,15 +30,6 @@ public class GestorComando {
         String nombre = in.readLine();
        out.println("Ingrese su id");
        int id = Integer.parseInt(in.readLine());
-       out.println("Ingrese sus apellidos");
-       String apellidos = in.readLine();
-       out.println("Ingrese su edad");
-       int edad = Integer.parseInt(in.readLine());
-       if (edad >= 18 ){
-           out.println("Usuario valido");
-       }else {
-           out.println("Debes ser mayor de 18 ");
-       }
        out.println("Ingrese su salario bruto");
        double salario = Double.parseDouble(in.readLine());
        out.println("Usted esta casado ?");
@@ -48,7 +39,7 @@ public class GestorComando {
        int hijos = Integer.parseInt(in.readLine());
 
 
-        ejecutar(st, new Empleado(nombre,id,apellidos, edad,salario,casado,hijos));
+        ejecutar(st, new Empleado(nombre,id,salario,casado,hijos));
 
 
     }

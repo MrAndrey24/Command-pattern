@@ -3,26 +3,19 @@ package acosta.andrey.base;
 public class Empleado {
     private String nombre;
     private int id;
-    private String apellido;
-    private int edad;
     private double salario;
     private String casado;
     private int cant_hijos;
 
-    public Empleado(String nombre, int id, String apellido, int edad, double salario, String casado, int cant_hijos) {
-       setNombre(nombre);
-       setId(id);
-       setApellido(apellido);
-       setEdad(edad);
-       setSalario(salario);
-       setCasado(casado);
-       setCant_hijos(cant_hijos);
-    }
-    public Empleado(){
-
+    public Empleado() {
     }
 
-    public Empleado(String nombre, int edad, double salario, int hijos) {
+    public Empleado(String nombre, int id, double salario, String casado, int cant_hijos) {
+        this.nombre = nombre;
+        this.id = id;
+        this.salario = salario;
+        this.casado = casado;
+        this.cant_hijos = cant_hijos;
     }
 
     public String getNombre() {
@@ -39,22 +32,6 @@ public class Empleado {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public double getSalario() {
@@ -86,8 +63,6 @@ public class Empleado {
         return "Empleado{" +
                 "nombre='" + nombre + '\'' +
                 ", id=" + id +
-                ", apellido='" + apellido + '\'' +
-                ", edad=" + edad +
                 ", salario=" + salario +
                 ", casado='" + casado + '\'' +
                 ", cant_hijos=" + cant_hijos +

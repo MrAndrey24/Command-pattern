@@ -7,8 +7,6 @@ public class ImprimirTramos implements TareaEjecutar {
 
     @Override
     public void ejecutarOrden66(Empleado empleado) {
-        System.out.println(empleado.getNombre());
-        System.out.println(empleado.getApellido());
-        System.out.println(empleado.getSalario());
+        System.out.println(empleado.toString());
     }
 }
